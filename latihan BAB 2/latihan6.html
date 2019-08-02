@@ -1,0 +1,47 @@
+<!-- Latihan perulangan berdasarkan inputan promptnya
+dan diberi batas maximalnya 10 perulangannya
+
+dan menguji if bersarang
+1 = Premium
+5 = Pro
+10 = Ultimate
+
+Gunakan HTML yg sudah disediakan
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Javascript.</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 10%
+        }
+    </style>
+</head>
+
+<body>
+
+    <h3>Bab 2 - Javascript.</h3>
+    <p id="p1">Dasar pemrograman untuk pemula.</p>
+    <div id="demo"></div>
+
+    <script>
+        var batas = prompt("Perulangan Sampai?");
+        for (x = 0; x <= batas; x++) {
+            if (x == 1) {
+                console.log(x + " - Premium");
+            } else if (x == 5) {
+                console.log(x + " - Pro");
+            } else if (x == 10) {
+                console.log(x + " - Ultimate");
+            } else {
+                console.log(x);
+            }
+        }
+    </script>
+</body>
+
+</html>

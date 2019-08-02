@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h3><u>Belajar</u> [Javascript]
+                    <small>Fundamental</small></h3>
+                <p class="text-info" id="result"></p>
+                <p id="p1">SELAMAT PAGI</p>
+                <p id="p2">DASAR PEMROGRAMAN PEMULA</p>
+                <div id="demo"></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // LATIHAN BAB 4.1
+
+        // function operasi() {
+        //     var ipSemester = [2.90, 3.10, 3.23, 3.71, 3.10];
+        //     var z = ipSemester.length;
+        //     var x = 0;
+        //     var total = 0;
+        //     while (x < z) {
+        //         var y = ipSemester[x];
+        //         var total = total + y;
+        //         x++;
+        //     }
+        //     nilai(total, z);
+        // }
+
+        // function nilai(count, length) {
+        //     var hitung = count / length;
+        //     console.log("indeks kumulatif: " + hitung.toFixed(4));
+        // }
+
+        // operasi();
+
+
+
+
+
+
+
+
+        // LATIHAN BAB 4.2
+
+        var badge = ["primary", "secondary", "info", "warning", "danger", "light", "dark", "success"];
+        var elemen = document.getElementById("demo");
+        var x = 0;
+        var timer = setInterval(function() {
+            elemen.innerHTML += `<span class= 'badge badge-${badge[x]}'>${badge[x]}</span> `;
+            x++;
+            if (x >= badge.length) clearInterval(timer);
+        }, 500);
+    </script>
+</body>
+
+</html>

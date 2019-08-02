@@ -1,0 +1,51 @@
+<!-- Melakukan perulangan while yg nilai awalnya mulai dari 1
+
+Dengan menampilkan alert dengan tulisan 
+cetak bilangan 1, bilangan 2, bilangan 3 ... 
+
+tentu proses perulangan akan terjadi
+ketika kita menekan tombol OK pada dialog confirmnya
+
+perulangan itu akan berhenti ketika
+kita menekan tombol cancel pada dialog confirmnya
+
+dan pada akhirnya kita akan tampilkan 
+semua hasil perulangan didalam console browser
+
+Gunakan HTML yg sudah disediakan
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Javascript.</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 10%
+        }
+    </style>
+</head>
+
+<body>
+
+    <h3>Bab 2 - Javascript.</h3>
+    <p id="p1">Dasar pemrograman untuk pemula.</p>
+    <div id="demo"></div>
+
+    <script>
+        var x = confirm("Lakukan Perulangan?");
+        var y = 1;
+        if (x == true) {
+            while (x == true) {
+                alert("Cetak Bilangan " + y);
+                console.log("Bilangan " + y);
+                var x = confirm("Mau Melakukannya Lagi?");
+                y++;
+            }
+        }
+    </script>
+</body>
+
+</html>

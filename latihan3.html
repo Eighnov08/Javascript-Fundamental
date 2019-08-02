@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h3><u>Belajar</u>
+                    <small id="title">Javascript Fundamental</small></h3>
+                <p class="text-info" id="result"></p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="form-group">
+                    <button class="btn btn-primary btn-sm" onclick="viewText()">
+                        Tombol
+                    </button>
+                </div>
+                <input type="text" placeholder="Nama..." id="input">
+                <mark id="demo"></mark>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var elemen = document.getElementById("result");
+        var elemen_demo = document.getElementById("demo");
+
+        // OBJECT JAVASCRIPT
+
+        // CARA PERTAMA
+        // var komputer = {
+        //     // key: value
+        //     merk: "Asus ROG",
+        //     harga: 20000,
+        //     qty: 3
+        // }
+
+        // elemen.innerHTML = komputer.harga;
+
+        // CARA KEDUA
+        // var mahasiswa = new Object();
+        // mahasiswa.nama = "Fajar Septiadi";
+        // mahasiswa["jurusan"] = "Teknik Informatika";
+
+        // elemen.innerHTML = "Nama: " + mahasiswa.nama + "<br>Jurusan: " + mahasiswa.jurusan;
+
+
+
+
+
+
+
+        // METODE OBJECT, memasukkan metode di object
+
+        // var komputer = {
+        //     // key: value
+        //     merk: "Asus ROG",
+        //     harga: 20000,
+        //     qty: 3,
+        //     tag: ["teknologi", "informasi", "sistem"],
+        //     getName: function() {
+        //         return "Merk Laptop: " + this.merk;
+        //     },
+        //     getCount: function() {
+        //         return "Jumlah Belanja: " + this.harga * this.qty;
+        //     },
+        //     getTag: function() {
+        //         return this.tag;
+        //     }
+        // }
+
+        // elemen.innerHTML = komputer.getTag()[1];
+
+
+
+
+
+
+
+
+        // OBJECT PROTOTYPE
+
+        // function Book(title, author) {
+        //     this.title = title;
+        //     this.author = author;
+        // }
+
+        // Book.prototype.price = 20000; // menambah property dan value
+
+        // var book = new Book("Javascript Fundamental", "Fajar");
+        // var book2 = new Book("jQuery", "Hiliyah");
+        // elemen.innerHTML = "Judul Buku: " + book.title + "<br>Author: " + book2.author + "<br>Harga: " + book.price;
+
+
+
+
+
+
+        // MUTABLE, memasukkan object ke dalam variabel
+
+        // var hardware = komputer; // komputer diambil dari object di atas
+        // hardware.merk = "Mac" // jika diubah seperti ini nilai merk akan tertimpa
+
+        // elemen.innerHTML = komputer.merk;
+
+
+
+
+
+
+
+        // ARRAY OBJECT
+
+        // var lessons = [{
+        //     name: "Angular",
+        //     description: "Description Angular"
+        // }, {
+        //     name: "jQuery",
+        //     description: "Description jQuery"
+        // }, {
+        //     name: "React",
+        //     description: "Description React"
+        // }];
+
+        // TAMPILKAN object array di lessons
+        // elemen.innerHTML = lessons[1].description;
+
+        // TAMPILKAN object array di lessong dengan foreach
+        // lessons.forEach(function(value, index) {
+        //     elemen.innerHTML += "<dt>" + value.name + "</dt>\
+        //     <dd>" + value.description + "</dd>";
+        // })
+    </script>
+</body>
+
+</html>

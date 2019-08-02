@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h3><u>Belajar</u> [Javascript]
+                    <small>Fundamental</small></h3>
+                <p class="text-info" id="result"></p>
+                <p id="p1">SELAMAT PAGI FAJAR</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // LATIHAN BAB 2.3
+        var a = 4;
+        var b = 25;
+        var c = 12;
+
+        if (a > b && a > c) {
+            console.log("Nilai terbesar dari " + a + ", " + b + ", " + c + " adalah: " + a);
+        } else if (b > a && b > c) {
+            console.log("Nilai terbesar dari " + a + ", " + b + ", " + c + " adalah: " + b);
+        } else if (c > a && c > b) {
+            console.log("Nilai terbesar dari " + a + ", " + b + ", " + c + " adalah: " + c);
+        }
+
+        // LATIHAN BAB 2.4
+        var telp = prompt("Register No Telp Anda:");
+
+        if (telp.length == 12) {
+            alert("No Telp Berhasil Didaftarkan");
+        } else if (telp == "") {
+            alert("No Telp Tidak Boleh Kosong");
+        } else {
+            alert("Minimal 12 Karakter");
+        }
+    </script>
+</body>
+
+</html>

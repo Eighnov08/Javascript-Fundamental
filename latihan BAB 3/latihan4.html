@@ -1,0 +1,37 @@
+<!-- Misalnya kita punya array angka 
+var angka = [5, 2, 4, 6, 10]
+
+Lalu hitung total keseluruhan dari isi array angka tersebut 
+tidak boleh menggunakan method dari javascript -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Javascript.</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 10%
+        }
+    </style>
+</head>
+
+<body>
+
+    <h3>Bab 3 - Javascript.</h3>
+    <p id="p1">Dasar pemrograman untuk pemula.</p>
+    <div id="demo"></div>
+
+    <script>
+        var angka = [5, 2, 4, 6, 10];
+        var y = 0;
+        for (x = 0; x < angka.length; x++) {
+            y += angka[x];
+        }
+        console.log("Total: " + y);
+    </script>
+</body>
+
+</html>

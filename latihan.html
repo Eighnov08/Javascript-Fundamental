@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h3><u>Belajar</u> [Javascript]
+                    <small>Fundamental</small></h3>
+                <p class="text-info" id="result"></p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // DAFTAR ISI
+        // LATIHAN WHILE
+        // LATIHAN ARRAY with Prompt
+        // ARRAY DALAM BENTUK LAIN
+        // METODE ARRAY
+        // LOOPING ARRAY
+        // MULTI DIMENSI ARRAY
+        // MATH RANDOM
+        // METODE SPLIT
+
+
+
+
+
+
+        // LATIHAN WHILE, alert confirm if else
+
+        // confirm("Mulai Mencoba");
+        // var a = 1;
+        // while (a <= 5) {
+        //     alert("Bilangan " + a);
+        //     var konfirm = confirm("Tampilkan Lagi?");
+        //     if (konfirm == true) {
+        //         document.getElementById("result").innerHTML += "Bilangan " + a + "<br>";
+        //         a++;
+        //     } else {
+        //         document.getElementById("result").innerHTML += "Bilangan " + a + "<br>";
+        //         endwhile;
+        //     };
+        // }
+
+
+
+
+
+        // LATIHAN ARRAY with PROMPT
+
+        // var buah = ["Mangga", "Anggur", "Jeruk"];
+        // buah[no = prompt("Nomor Buah")];
+        // document.getElementById("result").innerHTML = "Array ke " + no + " Adalah Buah " + buah[no];
+
+
+
+
+
+        // ARRAY DALAM BENTUK LAIN
+
+        // var blogs = new Array();
+        // blogs["title"] = "Javascript";
+        // blogs["content"] = "Materi Javascript Fundamental";
+        // document.getElementById("result").innerHTML = "\
+        // <li><strong>" + blogs.title + "</strong></li>\
+        // <p>" + blogs.content + "</p>";
+
+
+
+
+
+        //METODE ARRAY
+        // sort() untuk mengurutkan nilai array sesuai abjad
+        // reverse() mengurutkan array dari belakang, tak sesuai abjad
+        // concat untuk menggabungkan beberapa array jadi 1
+        // length untuk mengetahui jumlah array
+        // join() untuk memisahkan array dengan " - " contohnya
+        // splice(start, remove add) untuk menambah atau menghapus array
+        // pop() untuk menghapus nilai array terakhir
+        // push() untuk menambah array baru setelah array terakhir
+        // shift() kebalikan dari pop()
+        // unshift() kebalikan dari push()
+
+        // var buah = ["Mangga", "Anggur", "Jeruk"];
+        // var sayuran = ["Bayam", "Kangkung"];
+        // var angka = [1, 2, 3];
+
+        // buah.sort();
+        // buah.reverse();
+        // buah.splice(0, 1, "Jambu", "Duku");
+        // buah.pop();
+        // buah.push("jambu");
+        // var hasil = buah.concat(sayuran, angka);
+
+        // document.getElementById("result").innerHTML = buah;
+        // document.getElementById("result").innerHTML = hasil.length;
+        // document.getElementById("result").innerHTML = hasil.join(" - ");
+
+
+
+
+
+
+        // LOOPING ARRAY
+        // for () seperti looping biasa
+        // forEach() versi lebih simple dari for
+
+        // var buah = ["Mangga", "Anggur", "Jeruk", "Jambu", "Durian"];
+
+        //FOR
+        // for (var x = 0; x < buah.length; x++) {
+        //     document.getElementById("result").innerHTML += "<li>Buah " + buah[x] + "</li>";
+        // }
+
+        //forEach
+        // buah.forEach(function(value, index) {
+
+        //     document.getElementById("result").innerHTML += "<li>Buah " + value + (index + 1) + "</li>";
+        // })
+
+
+
+
+
+
+        // MULTI DIMENSI ARRAY 1
+
+        // var buah = [
+        //     ["Mangga", 70],
+        //     ["Jeruk", 80],
+        //     ["Jambu", 50]
+        // ];
+
+        // document.getElementById("result").innerHTML = buah[1][1];
+
+
+
+
+
+
+        // MULTI DIMENSI ARRAY 2
+        // Penulisan array bisa > nama_variabel_array["nama_key"] atau > nama_variabel_array.nama_key
+
+        // var category = new Array("HTML", "CSS", "PHP");
+        // var posts = [];
+        // posts["title"] = "apa itu multidimensi array?";
+        // posts.content = "array didalam array";
+        // posts.tag = category;
+
+        // document.getElementById("result").innerHTML = posts.tag;
+
+
+
+
+
+
+        // Math Random
+        // jika x = 5 maka angka yang diacak adalah 0-4 mengikuti hitungan array
+        // menambah + 3 bermaksud untuk membuat nilai awal angka yang diacak
+
+        // var x = 5;
+
+        // rumus dasar math.random
+        // document.getElementById("result").innerHTML = Math.random();
+
+        // math.floor untuk batas bawah
+        // document.getElementById("result").innerHTML = Math.floor(Math.random() * x) + 3;
+
+
+
+
+
+
+        // METODE SPLIT =  untuk memecah string menjadi array
+        // split("pemisah_array", limit)
+
+        // var text = "Belajar Javascript di Dumetschool";
+        // var hasil = text.split(" ", 2);
+        // document.getElementById("result").innerHTML = hasil;
+        // document.getElementById("result").innerHTML = hasil[0];
+    </script>
+</body>
+
+</html>

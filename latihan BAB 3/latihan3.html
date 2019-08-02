@@ -1,0 +1,39 @@
+<!-- Masukkan nilai dari inputan promptnya
+ke dalam array kosong
+dengan bantuan perintah while() sebanyak 5 kali
+Lalu tampilkan hasil console isi arraynya -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Javascript.</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 10%
+        }
+    </style>
+</head>
+
+<body>
+
+    <h3>Bab 3 - Javascript.</h3>
+    <p id="p1">Dasar pemrograman untuk pemula.</p>
+    <div id="demo"></div>
+
+    <script>
+        var materi = [];
+        var x = 0;
+        while (x < 5) {
+            var input = prompt("Input Materi");
+            materi.push(input);
+            x++;
+        }
+
+        console.log(materi);
+    </script>
+</body>
+
+</html>

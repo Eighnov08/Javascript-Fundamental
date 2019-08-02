@@ -1,0 +1,42 @@
+<!-- Membuat validasi sederhana
+Rule:
+- inputan tidak boleh kosong 
+- digit 'no_telpon' max 12 karakter 
+
+Gunakan HTML yg sudah disediakan
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Javascript.</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 10%
+        }
+    </style>
+</head>
+
+<body>
+
+    <h3>Bab 2 - Javascript.</h3>
+    <p id="p1">Dasar pemrograman untuk pemula.</p>
+    <div id="demo"></div>
+
+    <script>
+        var telp = prompt("Masukkan Nomor Telepon Anda");
+        if (telp.length == 12) {
+            alert("Nomor Telepon Berhasil Didaftarkan");
+        } else if (telp == "") {
+            alert("Nomor Telepon Tidak Boleh Kosong");
+        } else if (telp.length < 12) {
+            alert("Minimal 12 Karakter");
+        } else if (telp.length > 12) {
+            alert("Maksimal 12 Karakter");
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h3><u>Belajar</u> [Javascript]
+                    <small>Fundamental</small></h3>
+                <p class="text-info" id="result"></p>
+                <p id="p1">SELAMAT PAGI</p>
+                <p id="p2">DASAR PEMROGRAMAN PEMULA</p>
+                <div id="demo"></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // LATIHAN BAB 4.3
+
+        // function faktorial(x) {
+        //     var total = 1;
+        //     while (x >= 1) {
+        //         var y = x;
+        //         var total = total * y;
+        //         x--;
+        //     }
+        //     console.log(total);
+        // }
+
+        // faktorial(10);
+
+
+
+
+
+
+
+        // LATIHAN BAB 4.4
+
+        var text = "Selamat Pagi Juara";
+        var hasil = text.split(" ", 3);
+        var x = 0;
+
+        var timer = setInterval(function() {
+            document.getElementById("demo").innerHTML = hasil[x];
+            x++;
+            if (x >= hasil.length) {
+                clearInterval(timer);
+            }
+        }, 1000);
+    </script>
+</body>
+
+</html>

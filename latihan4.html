@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Document</title>
+    <style>
+        .del {
+            text-decoration: line-through;
+        }
+        
+        .bigSize {
+            font-size: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <img src="logo.png" class="img-responsive">
+        <h4>Tambah Elemen</h4>
+        <input type="text" id="input" placeholder="Masukkan Nama">
+        <code id="error"></code>
+        <button class="btn btn-sm btn-info">Tampilkan Password</button>
+        <button class="btn btn-sm bg-warning">Edit</button>
+        <button class="btn btn-sm btn-danger">Hapus</button>
+        <div class="row">
+            <div class="col-md-12">
+                <h3><u>Belajar</u>
+                    <small id="title">Javascript Fundamental</small></h3>
+                <p class="text-info" id="result"></p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="thumbnail"></div>
+                <div class="thumbnail"></div>
+                <div class="thumbnail"></div>
+                <ul id="demo">
+                    <li>Angular Javascript</li>
+                    <li>React</li>
+                    <li class="bg-info">Vue JS <span class="badge">&times;</span></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <form action="">
+                    <input type="text" id="input2">
+                    <button class="btn btn-sm btn-success" type="submit">Tampil</button>
+                    <button class="btn btn-sm btn-outline-info">Ubah BG</button>
+                    <p id="tampil"></p>
+                    <a href="">Link</a>
+                    <a href="">Link 2</a>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // SELECTOR berdasarkan class
+        // var classBox = document.getElementsByClassName("thumbnail");
+        // classBox[0].innerHTML = "Angular";
+        // classBox[1].innerHTML = "jQuery";
+        // classBox[2].innerHTML = "React";
+
+        // SELECTOR berdasarkan tag
+        // var small = document.getElementsByTagName("small");
+        // small[0].onclick = function() {
+        //     this.innerHTML = "Vue JS";
+        // }
+
+
+
+
+
+
+        // QUERY SELECTOR
+        // querySelector() = ini hanya mengubah data pertama tanpa harus menulis index
+        // querySelectorAll(bisa tag, id #nama_id, class .nama_class) = mengubah semua
+
+        // var list = document.querySelectorAll("li");
+        // list[0].innerHTML = "jQuery";
+        // list[1].className = "bg-info";
+
+
+
+
+
+
+        // Menambahkan Elemen
+        // createElement = untuk membuat elemen
+        // appendChild = untuk memasukkan elemen ke parent
+        // createTextNode = untuk membuat text yang ingin dimasukkan ke dalam elemen
+
+        // var small = document.createElement("small");
+        // var title = document.querySelector("h4");
+        // var text = document.createTextNode("Javascript Fundamental");
+
+        // small.appendChild(text);
+        // title.appendChild(small);
+
+
+
+
+
+
+        // Mengubah Elemen
+        // replaceChild(elemenbaru, elemenlama)
+
+        // var small = document.createElement("small");
+        // var title = document.querySelector("h4");
+        // var text = document.createTextNode("Javascript Fundamental");
+        // var elemenBaru = document.createElement("code");
+        // var btn = document.querySelectorAll("button");
+
+        // small.appendChild(text);
+        // title.appendChild(small);
+
+        // btn[0].onclick = function() {
+        //     var text = document.createTextNode("jQuery dan PHP Mysql");
+        //     elemenBaru.appendChild(text);
+        //     title.replaceChild(elemenBaru, small);
+        // }
+
+
+
+
+
+
+
+        // MENGHAPUS ELEMEN
+
+        // var small = document.createElement("small");
+        // var title = document.querySelector("h4");
+        // var text = document.createTextNode("Javascript Fundamental");
+        // var elemenBaru = document.createElement("code");
+        // var btn = document.querySelectorAll("button");
+
+        // small.appendChild(text);
+        // title.appendChild(small);
+
+        // btn[0].onclick = function() {
+        //     var text = document.createTextNode("jQuery dan PHP Mysql");
+        //     elemenBaru.appendChild(text);
+        //     title.replaceChild(elemenBaru, small);
+        // }
+
+        // btn[1].onclick = function() {
+        //     var h4 = document.querySelector("h4");
+        //     var parent = h4.parentElement;
+        //     parent.removeChild(h4);
+        // }
+
+        // btn[1].addEventListener("click", function() {
+        //     var h4 = document.querySelector("h4");
+        //     var parent = h4.parentElement;
+        //     parent.removeChild(h4);
+        // })
+
+
+
+
+
+
+
+        // MENAMBAHKAN, MENAMPILKAN, dan MENGUBAH ATTRIBUTE
+
+        // var input = document.getElementById("input");
+
+        // MENAMBAHKAN
+        // var btn = document.getElementsByTagName("button");
+        // var btn = document.getElementsByTagName("button");
+        // input.setAttribute("placeholder", "Masukkan Nama");
+
+        // MENAMPILKAN
+        // var text = btn[0].getAttribute("class");
+        // document.getElementById("result").innerHTML = text;
+
+        // MENGUBAH
+        // input.setAttribute("type", "file");
+
+        // CARA LAIN MENAMBAH, MENAMPILKAN, dan MENGUBAH ATTRIBUTE
+        // input.placeholder = "Masukkan Password"; //menambah
+        // input.type = "password"; //mengubah
+        // console.log(input.placeholder); //menampilkan
+
+        // Menampilkan Password
+        // var btn = document.querySelectorAll("button");
+        // btn[0].onclick = function() {
+        //     input.type = "text";
+        // }
+
+
+
+
+
+
+
+
+        // STYLE JAVASCRIPT
+        // var elemen = document.getElementById("demo");
+        // elemen.style.color = "aqua";
+        // elemen.style.fontWeight = "bold";
+        // elemen.style.border = "1px solid grey";
+        // elemen.style.backgroundColor = "grey";
+
+
+
+
+
+
+
+        // CLASS NAME
+        // var li = document.querySelectorAll("li");
+
+        // menambahkan class yang masih ksong misal class=""
+        // li[1].className = "bg-warning";
+        // li[0].className = "del";
+
+        // menambahkan class yang sudah ada misal class="bg-warning"
+        // li[2].className += " del";
+
+        // cara flexibel menambahkan class yg sudah ada
+        // Classlist
+        // li[0].classList.add("del", "bigSize");
+
+        // delete class
+        // li[0].classList.remove("del");
+
+        // Classlist Toggle
+        // var remove = document.querySelector(".badge");
+        // remove.addEventListener("click", removeList);
+
+        // function removeList() {
+        //     li[2].classList.toggle("bg-info")
+        // }
+
+
+
+
+
+
+
+
+        // EVENT FOCUS DAN BLUR
+        // var input = document.getElementById("input");
+        // var error = document.getElementById("error");
+
+        // input.onfocus = function() {
+        //     this.style.padding = "5px";
+        //     error.innerText = "";
+        //     this.style.filter = "blur(0)";
+        // }
+
+        // input.onblur = function() {
+        //     if (this.value == "") {
+        //         error.innerText = "name is required";
+        //         this.style.padding = "0px";
+        //         this.style.filter = "blur(1px)";
+        //     }
+        // }
+
+
+
+
+
+
+
+        // EVENT onSUbmit
+
+        // var formular = document.forms[0];
+        // var input2 = document.querySelector("#input2");
+        // var elemen = document.getElementById("tampil");
+
+        // formular.onsubmit = inputSubmit;
+
+        // function inputSubmit(event) {
+        //     event.preventDefault();
+        //     var text = input2.value;
+        //     elemen.innerText = text;
+        //     input2.value = "";
+        // }
+
+
+
+
+
+
+
+        // HTML OBJECT
+
+        // menambah method ke form
+        // document.forms[0].method = "POST";
+
+        // menambah class ke body
+        // document.body.className = "bg-info";
+
+        // menambah class thumbnail ke image
+        // catatan: jika tanpa preventdef maka button harus sejajar dengan imagenya, jika button ada di dalam form
+        // maka harus di preventdef
+
+        // var btn = document.querySelectorAll("button");
+        // btn[4].onclick = function(e) {
+        //     e.preventDefault();
+        //     document.images[0].classList.add("thumbnail");
+        // }
+
+        // merubah bg links
+        // document.links[0].style.backgroundColor = "aqua";
+        // document.links[1].style.backgroundColor = "blue";
+    </script>
+</body>
+
+</html>

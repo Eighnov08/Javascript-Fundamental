@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h3><u>Belajar</u>
+                    <small id="title">Javascript Fundamental</small></h3>
+                <p class="text-info" id="result"></p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="form-group">
+                    <button class="btn btn-primary btn-sm" onclick="viewText()">
+                        Tombol
+                    </button>
+                </div>
+                <input type="text" placeholder="Nama..." id="input">
+                <mark id="demo"></mark>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // DAFTAR ISI
+        // function()
+        // parameter function
+        // Default parameter
+        // RETURN JAVASCRIPT
+        // FUNCTION ARRAY ATAU FUNCTION DALAM BENTUK LAIN
+        // SCOPE JAVASCRIPT ATAU RUANG LINGKUP
+        // METODE NUMBER
+        // METODE LENGTH dan INDEXOF
+        // METODE STRING
+        // JS EVENT ADA TIGA CARA
+        // SETTIMEOUT DAN SETINTERVAL
+        // OBJECT JAVASCRIPT
+        // METODE OBJECT, memasukkan metode di object
+        // OBJECT PROTOTYPE
+
+
+
+
+
+
+
+
+        var elemen = document.getElementById("result");
+        var elemen_demo = document.getElementById("demo");
+
+        // function()
+
+        // function getText() {
+        //     elemen.innerHTML = "Fajar Septiadi";
+        // }
+
+        // jalankan function
+        // getText();
+
+
+
+
+
+
+        // PARAMETER FUNCTION, bisa lebih dari satu parameter format: function nama_function(parameter1, parameter2)
+
+        // function getCount(x, y) {
+        //     var total = x + y;
+        //     elemen.innerHTML = total;
+        // }
+
+        // getCount(5, 3);
+
+
+
+
+
+
+        // DEFAULT PARAMETER ADA 3 CARA
+
+        // CARA PERTAMA
+        // function getCount(x, y) {
+        //     y = y || 1;
+        //     var total = x + y;
+        //     elemen.innerHTML = total;
+        // }
+
+        // getCount(5);
+
+        // CARA KEDUA
+        // function getCount(x, y) {
+        //     if (typeof y == "undefined") {
+        //         y = 2;
+        //     }
+        //     var total = x + y;
+        //     elemen.innerHTML = total;
+        // }
+
+        // getCount(5);
+
+        // CARA KETIGA (supp ES6)
+        // function getCount(x, y = 3) {
+        //     var total = x + y;
+        //     elemen.innerHTML = total;
+        // }
+
+        // getCount(5);
+
+
+
+
+
+
+
+        // RETURN JAVASCRIPT
+
+        // RETURN DASAR
+        // function getAngka() {
+        //     return 20;
+        // }
+
+        // elemen.innerHTML = getAngka();
+
+        // RETURN KOMBINASI
+        // function getAngka(x, y) {
+        //     return x + y;
+        // }
+
+        // elemen.innerHTML = "Hasilnya " + getAngka(20, 5);
+
+
+
+
+
+
+        // FUNCTION ARRAY atau FUNCTION DALAM BENTUK LAIN
+
+        // var number = function(num) {
+        //     elemen.innerHTML = num;
+        // }
+
+        // number([2, 3, 4]);
+
+
+
+
+
+
+        // SCOPE JAVASCRIPT ATAU RUANG LINGKUP
+
+        // var text = "Javascript"; //GLOBAL
+
+        // function getName() {
+        //     // var materi = "jQuery"; //LOCAL
+        //     materi = "jQuery"; // LOCAL DIUBAH JADI GLOBAL
+        // }
+
+        // getName();
+        // elemen.innerHTML = materi;
+
+
+
+
+
+
+
+        // METODE NUMBER
+
+        // var pecahan = 3.3434445;
+        // var pecahan2 = 5.2324243;
+        // var pecahan3 = 5.635635;
+        // var angka1 = 25;
+        // var angka2 = 300;
+
+        // toFixed = untuk mengambil berapa angka dibelakang koma
+        // elemen.innerHTML = pecahan.toFixed(4);
+
+        // toString = untuk mengubah tipe data menjadi string
+        // elemen.innerHTML = angka1 + angka2.toString();
+
+        // min = menampilkan angka terendah atau terkecil
+        // elemen.innerHTML = Math.min(2, 4, 7, 10);
+
+        // max = menampilkan angka tertinggi
+        // elemen.innerHTML = Math.max(2, 4, 7, 10);
+
+        // round = membulatkan pecahan ke angka terdekat misal 3,3 jadi 3 dan 3,6 jadi 4
+        // elemen.innerHTML = Math.round(pecahan2);
+        // elemen.innerHTML = Math.round(pecahan3);
+
+        // ceil = membulatkan pecahan ke atas
+        // elemen.innerHTML = Math.ceil(pecahan2);
+
+        // floor = membulatkan pecahan ke bawah
+        // elemen.innerHTML = Math.floor(pecahan3);
+
+
+
+
+
+
+
+        // METODE LENGTH dan INDEXOF
+
+        // var text = "Javascript";
+
+        // length = untuk mengetahui panjang karakter atau nilai
+        // elemen.innerHTML = text.length;
+
+        // indexOf = untuk mengetahui posisi index paling awal
+        // elemen.innerHTML = text.indexOf("a"); //hasilnya 1 karena huruf a pertama di kata "Javascript" ada di index ke 1
+
+        // indexOf = untuk mengetahui posisi index paling awal
+        // elemen.innerHTML = text.lastIndexOf("a"); //hasilnya 3 karena huruf a terakhir di kata "Javascript" ada di index ke 3
+
+
+
+
+
+
+
+
+        // METODE STRING
+
+        // var text = "Javascript";
+        // var angka = "10.4";
+
+        // charAt = untuk mencari huruf dengan index
+        // elemen.innerHTML = text.charAt(6); //hasilnya adalah r karena r ada di index ke 6
+
+        // topUpperCase = untuk mengubah string menjadi kapital semua
+        // elemen.innerHTML = text.toUpperCase();
+
+        // topLowerCase = untuk mengubah string menjadi huruf kecil semua
+        // elemen.innerHTML = text.toLowerCase();
+
+        // replace("kata-yang-dicari", "kata-baru") = mengubah kata yang dicari menjadi kata yang baru
+        // elemen.innerHTML = text.replace("Java", "Ecma");
+
+        // substring(start, end) dan subtr(index_ke_berapa, pjg_karakter_yg_ingin_diambil) = mengambil atau memecah kata
+        // elemen.innerHTML = text.substring(0, 6);
+        // elemen.innerHTML = text.substr(0, 6);
+
+        // parseInt = untuk mengubah tipe data string menjadi int
+        // elemen.innerHTML = parseInt(angka) + 10; // hasilnya akan bulat menjadi 20 dan jika tanpa parseInt hasilnya adalah 10.410
+
+        // parseFloat = sama seperti parseInt tetapi khusus pecahan
+        // elemen.innerHTML = parseFloat(angka) + 10; // hasilnya akan 20.4
+
+
+
+
+
+
+
+        // JS EVENT ADA TIGA CARA
+
+        // PERTAMA : INLINE
+        // function viewText() {
+        //     elemen_demo.innerHTML = "Fajar";
+        // }
+
+        // KEDUA : INTERNAL
+        // onkeyup = live respon
+        // this = input, value = nilai di dalam input
+        // var input = document.getElementById("input");
+
+        // input.onkeyup = function() {
+        //     elemen_demo.innerHTML = this.value;
+        // }
+
+        // KETIGA : EVEN LISTENER
+        // addEventListener = lebih umum atau general
+        // mouseenter = saat kursor diarahkan ke object
+
+        // var title = document.getElementById("title");
+        // title.addEventListener("mouseenter", function() {
+        //     this.innerHTML = "jQuery";
+        // })
+
+
+
+
+
+
+        // SETTIMEOUT DAN SETINTERVAL
+        // 1000 ms = 1 second
+
+        // setTimeout = untuk melakukan aksi dengan waktu yang kita tentukan, namun hanya dijalankan 1 kali
+        // setTimeout(function() {
+        //     elemen.innerHTML = "Halo Bro"
+        // }, 2000);
+
+        // setInterval = untuk melakukan aksi dengan waktu yang kita tentukan dan dijalankan berulang kali
+        // var i = 10;
+        // var timer = setInterval(function() {
+        //     elemen.innerHTML = i;
+        //     i--;
+        //     if (i == 0) clearInterval(timer);
+        // }, 1000);
+
+
+
+
+
+
+        // OBJECT JAVASCRIPT
+
+        // CARA PERTAMA
+        // var komputer = {
+        //     // key: value
+        //     merk: "Asus ROG",
+        //     harga: 20000,
+        //     qty: 3
+        // }
+
+        // elemen.innerHTML = komputer.harga;
+
+        // CARA KEDUA
+        // var mahasiswa = new Object();
+        // mahasiswa.nama = "Fajar Septiadi";
+        // mahasiswa["jurusan"] = "Teknik Informatika";
+
+        // elemen.innerHTML = "Nama: " + mahasiswa.nama + "<br>Jurusan: " + mahasiswa.jurusan;
+
+
+
+
+
+
+
+        // METODE OBJECT, memasukkan metode di object
+
+        // var komputer = {
+        //     // key: value
+        //     merk: "Asus ROG",
+        //     harga: 20000,
+        //     qty: 3,
+        //     tag: ["teknologi", "informasi", "sistem"],
+        //     getName: function() {
+        //         return "Merk Laptop: " + this.merk;
+        //     },
+        //     getCount: function() {
+        //         return "Jumlah Belanja: " + this.harga * this.qty;
+        //     },
+        //     getTag: function() {
+        //         return this.tag;
+        //     }
+        // }
+
+        // elemen.innerHTML = komputer.getTag()[1];
+
+
+
+
+
+
+
+
+        // OBJECT PROTOTYPE
+
+        // function Book(title, author) {
+        //     this.title = title;
+        //     this.author = author;
+        // }
+
+        // Book.prototype.price = 20000; // menambah property dan value
+
+        // var book = new Book("Javascript Fundamental", "Fajar");
+        // var book2 = new Book("jQuery", "Hiliyah");
+        // elemen.innerHTML = "Judul Buku: " + book.title + "<br>Author: " + book2.author + "<br>Harga: " + book.price;
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+<!-- faktorial: Pelajaran matematika.
+
+MEMBUAT sebuah fungsi faktorial: 
+yakni ketika saya masukkan angka 5 kedalam sebuah fungsi faktorial()
+maka dia akan menghitung seperti ini
+5*4*3*2*1 = 120
+
+Begitu saya masukkan 10:
+Maka teman teman bisa tebak hasil jumlah dari faktorial 10? -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Javascript.</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 10%
+        }
+    </style>
+</head>
+
+<body>
+
+    <h3>Bab 4 - Javascript.</h3>
+    <p id="p1">Dasar pemrograman untuk pemula.</p>
+
+    <script>
+        function faktorial(x) {
+            var total = 1;
+            for (i = x; i >= 1; i--) {
+                total = total * i;
+            }
+            console.log(total);
+        }
+        faktorial(5);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+<!-- Membuat Operator Aritmatika
+dari dua bilangan yakni 10 dan 18
+
+Operasinya tergantung dari nilai inputan promptnya
+bisa berupa operator ( + - * / ).
+
+Gunakan HTML yg sudah disediakan
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Javascript.</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 10%
+        }
+    </style>
+</head>
+
+<body>
+
+    <h3>Bab 2 - Javascript.</h3>
+    <p id="p1">Dasar pemrograman untuk pemula.</p>
+    <div id="demo"></div>
+
+    <script>
+        var x = 10;
+        var y = 18;
+        var operator = prompt("+,-,*,/,%");
+        if (operator == "+") {
+            var hasil = x + y;
+        } else if (operator == "-") {
+            var hasil = x - y;
+        } else if (operator == "*") {
+            var hasil = x * y;
+        } else if (operator == "/") {
+            var hasil = x / y;
+        } else if (operator == "%") {
+            var hasil = x % y;
+        }
+        console.log("Total: " + hasil);
+    </script>
+</body>
+
+</html>
